@@ -1,6 +1,5 @@
 // practice questions on promise
 
-/*1) start*/
 const ListOfAllobje = "https://api.restful-api.dev/objects";
 const Listofobjectsbyids =
   "https://api.restful-api.dev/objects?id=3&id=5&id=10";
@@ -53,4 +52,31 @@ findListofObject()
     console.log(erorr);
   });
 
-/*2) end*/
+//end practice questions on promise
+
+// example of finaly
+
+const fetchfn = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const status = false;
+      if (status) {
+        resolve("data fetched sucessfully");
+      } else {
+        reject("data not fetched sucessfully");
+      }
+    }, 2000);
+  });
+};
+fetchfn()
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((Err) => {
+    console.log(Err);
+  })
+  .finally(() => {
+    console.log("Operation completed. Cleaning up resources...");
+  });
+
+//end example of finaly
