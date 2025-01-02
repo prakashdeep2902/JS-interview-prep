@@ -35,4 +35,4 @@ fetusersAPI(function (users) {
   });
 });
 
-// here developer doe'nt have any controles over his code fetCommentsApi depends on futUrE if futUrE get any error then fetCommentsApi will face error also this call Inversion of Control (IoC)
+// here developer doe'nt have any controles over his code fetCommentsApi depends on fetusersAPI if fetusersAPI get any error then fetCommentsApi will face error also this call Inversion of Control (IoC)
